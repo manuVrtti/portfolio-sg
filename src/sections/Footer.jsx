@@ -55,7 +55,7 @@ export default function Footer() {
               SUYASH
             </h3>
             <p style={{ fontSize: '0.85rem', color: 'var(--accent-primary)', margin: '0 0 8px', letterSpacing: '1px', textTransform: 'uppercase', fontWeight: 600 }}>
-              Creative Full Stack Developer
+              Developer | Builder | Creator
             </p>
             <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', margin: 0, maxWidth: '400px', fontWeight: 300 }}>
               Building immersive digital experiences with modern technologies.

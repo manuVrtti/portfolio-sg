@@ -352,7 +352,7 @@ const IntroMilestone = ({ z, scrollProgressRef }) => {
                 anchorY="middle"
                 font="/fonts/RubikScribble-Regular.ttf"
             >
-                SHAN
+                SUYASH
             </Text>
 
             {/* Subtitle - Brand (spreads right) */}
@@ -365,7 +365,7 @@ const IntroMilestone = ({ z, scrollProgressRef }) => {
                 anchorY="middle"
                 font="/fonts/CabinSketch-Bold.ttf"
             >
-                CREATIVE FULL STACK DEVELOPER
+                DEVELOPER | BUILDER | CREATOR
             </Text>
 
             {/* Avatar on cloud - floating + spreads up-left */}

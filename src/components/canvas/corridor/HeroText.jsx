@@ -8,7 +8,7 @@ const RUBIK_SCRIBBLE_URL = '/fonts/RubikScribble-Regular.ttf';
 const CABIN_SKETCH_URL = '/fonts/CabinSketch-Regular.ttf';
 
 /**
- * HeroText Component - Custom styled for Shan
+ * HeroText Component - Custom styled for Suyash
  */
 const HeroText = ({ position = [0, 0.3, 0] }) => {
     const groupRef = useRef();
@@ -43,20 +43,22 @@ const HeroText = ({ position = [0, 0.3, 0] }) => {
     const floatY = useRef(0);
     const worldPosVec = useRef(new THREE.Vector3());
 
-    // Letter positions for SHAN split effect (4 letters)
+    // Letter positions for SUYASH split effect (6 letters)
     const letters = useMemo(() => [
-        { char: 'S', baseX: -0.9, splitDir: -1.8 },
-        { char: 'H', baseX: -0.3, splitDir: -0.6 },
+        { char: 'S', baseX: -1.5, splitDir: -2.4 },
+        { char: 'U', baseX: -0.9, splitDir: -1.5 },
+        { char: 'Y', baseX: -0.3, splitDir: -0.6 },
         { char: 'A', baseX: 0.3, splitDir: 0.6 },
-        { char: 'N', baseX: 0.9, splitDir: 1.8 },
+        { char: 'S', baseX: 0.9, splitDir: 1.5 },
+        { char: 'H', baseX: 1.5, splitDir: 2.4 },
     ], []);
 
     // Tagline words for split effect
     const taglineWords = useMemo(() => [
-        { text: 'Creative', baseX: -1.3, splitDir: -1.8 },
-        { text: 'Full Stack', baseX: -0.4, splitDir: -0.6 },
-        { text: 'Developer', baseX: 0.4, splitDir: 0.6 },
-        { text: 'Interactive', baseX: 1.3, splitDir: 1.8 },
+        { text: 'Developer', baseX: -1.0, splitDir: -1.8 },
+        { text: '|', baseX: -0.3, splitDir: -0.6 },
+        { text: 'Builder', baseX: 0.3, splitDir: 0.6 },
+        { text: '|  Creator', baseX: 1.1, splitDir: 1.8 },
     ], []);
 
     // Animation loop
@@ -86,7 +88,7 @@ const HeroText = ({ position = [0, 0.3, 0] }) => {
 
         splitAmount.current = THREE.MathUtils.lerp(splitAmount.current, targetSplit.current, 0.08);
 
-        // Apply split to each letter of SHAN
+        // Apply split to each letter of SUYASH
         letterRefs.current.forEach((ref, i) => {
             if (ref) {
                 if (ref.material) ref.material.opacity = 1;
@@ -117,7 +119,7 @@ const HeroText = ({ position = [0, 0.3, 0] }) => {
 
     return (
         <group ref={groupRef} position={position} scale={[scale, scale, 1]}>
-            {/* SHAN Letters */}
+            {/* SUYASH Letters */}
             {letters.map((letter, i) => (
                 <Text
                     key={`${letter.char}-${i}`}

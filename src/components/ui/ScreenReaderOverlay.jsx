@@ -26,11 +26,11 @@ const ScreenReaderOverlay = () => {
 
             {/* Main accessible navigation */}
             <nav id="sr-main-nav" className="sr-only" aria-label="Portfolio rooms">
-                <h1>Shan — Creative Full Stack Developer</h1>
+                <h1>Suyash — Developer | Builder | Creator</h1>
                 <h2>Portfolio Navigation</h2>
 
                 {!hasEntered && (
-                    <p>Welcome to Shan's interactive 3D portfolio. Click or press Enter on the doors to enter.</p>
+                    <p>Welcome to Suyash's interactive 3D portfolio. Click or press Enter on the doors to enter.</p>
                 )}
 
                 {hasEntered && !isInRoom && (
